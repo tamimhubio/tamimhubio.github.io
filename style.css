@@ -1,0 +1,366 @@
+/* 
+  Basic reset:
+  Removes default browser spacing.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+  Smooth scrolling:
+  When you click navbar links, the page scrolls smoothly.
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+/* Main body style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0b0d0f;
+  color: #d6d6d6;
+  line-height: 1.6;
+}
+
+/* Reusable container for content width */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Reusable section spacing */
+.section {
+  padding: 90px 0;
+}
+
+/* Header / navbar background */
+.header {
+  background-color: #0b0d0f;
+  border-bottom: 1px solid #2a2e33;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Navbar layout */
+.navbar {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 72px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo style */
+.logo {
+  color: #c6a15b;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* Navigation links container */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+/* Navigation link style */
+.nav-links a {
+  color: #d6d6d6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Navigation hover effect */
+.nav-links a:hover {
+  color: #c6a15b;
+}
+
+/* Hero section */
+.hero {
+  min-height: 90vh;
+
+  /* Dark cinematic background */
+  background:
+    linear-gradient(rgba(11, 13, 15, 0.86), rgba(11, 13, 15, 0.96)),
+    radial-gradient(circle at top, #3a2422, #0b0d0f 60%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Hero content box */
+.hero-content {
+  width: 90%;
+  max-width: 800px;
+}
+
+/* Small title above main hero heading */
+.small-title {
+  color: #c6a15b;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+/* Main hero heading */
+.hero h1 {
+  font-size: 4rem;
+  color: #f3f0e8;
+  margin-bottom: 20px;
+}
+
+/* Highlighted name */
+.hero h1 span {
+  color: #c6a15b;
+}
+
+/* Hero paragraph */
+.hero-text {
+  color: #b8b8b8;
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin: 0 auto 32px;
+}
+
+/* Reusable button */
+.btn {
+  display: inline-block;
+  background-color: #c6a15b;
+  color: #0b0d0f;
+  padding: 13px 28px;
+  border-radius: 4px;
+  border: 1px solid #c6a15b;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: transparent;
+  color: #c6a15b;
+  transform: translateY(-3px);
+}
+
+/* All section headings */
+h2 {
+  color: #f3f0e8;
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+/* Small text under section heading */
+.section-text {
+  text-align: center;
+  color: #a8a8a8;
+  margin-bottom: 40px;
+}
+
+/* About section background */
+.about {
+  background-color: #111417;
+}
+
+/* About text box */
+.about-box {
+  background-color: #15191d;
+  border: 1px solid #2a2e33;
+  border-left: 4px solid #c6a15b;
+  padding: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* About paragraph */
+.about-box p {
+  margin-bottom: 16px;
+  color: #c9c9c9;
+}
+
+/* Remove margin from last paragraph */
+.about-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* Accounts section background */
+.accounts {
+  background-color: #0b0d0f;
+}
+
+/* Account card grid layout */
+.accounts-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 22px;
+}
+
+/* Account card design */
+.account-card {
+  background-color: #15191d;
+  border: 1px solid #2a2e33;
+  padding: 28px 20px;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #d6d6d6;
+  transition: all 0.3s ease;
+}
+
+/* Account card hover effect */
+.account-card:hover {
+  transform: translateY(-8px);
+  border-color: #c6a15b;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.45);
+}
+
+/* Circle icon inside account card */
+.account-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background-color: #0b0d0f;
+  border: 1px solid #c6a15b;
+  color: #c6a15b;
+  font-weight: bold;
+}
+
+/* Account card title */
+.account-card h3 {
+  color: #f3f0e8;
+  margin-bottom: 10px;
+}
+
+/* Account card text */
+.account-card p {
+  color: #a8a8a8;
+  font-size: 0.95rem;
+}
+
+/* Contact section background */
+.contact {
+  background-color: #111417;
+}
+
+/* Contact form box */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #15191d;
+  border: 1px solid #2a2e33;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+/* Space between form fields */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label style */
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #f3f0e8;
+  font-weight: bold;
+}
+
+/* Input and textarea style */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 13px;
+  background-color: #0b0d0f;
+  border: 1px solid #2a2e33;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+/* Placeholder text color */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #777;
+}
+
+/* Focus effect when clicking input */
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #c6a15b;
+}
+
+/* Footer design */
+.footer {
+  background-color: #0b0d0f;
+  border-top: 1px solid #2a2e33;
+  color: #a8a8a8;
+  text-align: center;
+  padding: 24px;
+}
+
+/* Tablet responsive design */
+@media (max-width: 900px) {
+  .accounts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+  .navbar {
+    height: auto;
+    padding: 18px 0;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .nav-links {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .accounts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+}

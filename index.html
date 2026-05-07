@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic setup for the webpage -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title shown in browser tab -->
+  <title>Tamim | Personal Profile</title>
+
+  <!-- Connect CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header section contains the navigation bar -->
+  <header class="header">
+    <nav class="navbar">
+
+      <!-- Logo / website name -->
+      <a href="#hero" class="logo">Tamim</a>
+
+      <!-- Navigation links -->
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#accounts">Accounts</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- Main content of the website -->
+  <main>
+
+    <!-- Hero / Intro Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-content">
+
+        <!-- Small title above main heading -->
+        <p class="small-title">Personal Profile</p>
+
+        <!-- Main intro heading -->
+        <h1>Hey, I'm <span>Tamim</span></h1>
+
+        <!-- You can change this text later -->
+        <p class="hero-text">
+          I do not have everything planned.
+          But I know I am not staying the same — and that is enough for now.
+        </p>
+
+        <!-- Button goes to accounts section -->
+        <a href="#accounts" class="btn">View My Accounts</a>
+
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about section">
+      <div class="container">
+
+        <h2>About Me</h2>
+
+        <!-- About text box -->
+        <div class="about-box">
+          <p>
+            I’m still figuring things out, step by step. I believe in slow progress and learning through mistakes.
+
+            I keep things simple on the outside—but there’s always more going on than people notice
+          </p>
+
+          <p>
+            Keep it simple and real. This section helps visitors understand
+            who you are and what you are working on.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Accounts Section -->
+    <section id="accounts" class="accounts section">
+      <div class="container">
+
+        <h2>My Accounts</h2>
+
+        <p class="section-text">
+          Connect with me through my social and coding profiles.
+        </p>
+
+        <!-- Account cards container -->
+        <div class="accounts-grid">
+
+          <!-- Facebook account card -->
+          <a href="https://facebook.com/muhammad.tamim.254296" target="_blank" rel="noopener noreferrer" class="account-card">
+            <div class="account-icon">FB</div>
+            <h3>Facebook</h3>
+            <p>Visit my Facebook profile.</p>
+          </a>
+
+          <!-- Instagram account card -->
+          <a href="https://instagram.com/tam_im1920" target="_blank" rel="noopener noreferrer" class="account-card">
+            <div class="account-icon">IG</div>
+            <h3>Instagram</h3>
+            <p>Visit my Instagram profile.</p>
+          </a>
+
+          <!-- X account card -->
+          <a href="https://x.com/@Tamimm_1920" target="_blank" rel="noopener noreferrer" class="account-card">
+            <div class="account-icon">X</div>
+            <h3>X</h3>
+            <p>Visit my X profile.</p>
+          </a>
+
+          <!-- LinkedIn account card -->
+          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="account-card">
+            <div class="account-icon">IN</div>
+            <h3>LinkedIn</h3>
+            <p>Visit my LinkedIn profile.</p>
+          </a>
+
+          <!-- GitHub account card -->
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="account-card">
+            <div class="account-icon">GH</div>
+            <h3>GitHub</h3>
+            <p>See my code and projects.</p>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container">
+
+        <h2>Contact Me</h2>
+
+        <p class="section-text">
+          Send me a message using the form below.
+        </p>
+
+        <!-- Contact form, no backend yet -->
+        <form id="contactForm" class="contact-form">
+
+          <!-- Name input -->
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input 
+              type="text" 
+              id="name" 
+              placeholder="Enter your name" 
+              required
+            />
+          </div>
+
+          <!-- Email input -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input 
+              type="email" 
+              id="email" 
+              placeholder="Enter your email" 
+              required
+            />
+          </div>
+
+          <!-- Message input -->
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea 
+              id="message" 
+              rows="5" 
+              placeholder="Write your message" 
+              required
+            ></textarea>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn">Send Message</button>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Tamim. All rights reserved.</p>
+  </footer>
+
+  <!-- Connect JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
